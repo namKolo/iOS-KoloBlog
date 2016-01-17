@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsfeedViewController" customModule="mrkolo_newsfeed" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CardViewCell" customModule="mrkolo_newsfeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="206.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDg-00-AzT">
+                        <rect key="frame" x="8" y="8" width="304" height="190.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDb-ic-pbL" customClass="CircleLabel" customModule="mrkolo_newsfeed" customModuleProvider="target">
+                                <rect key="frame" x="122" y="8" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Cbx-Km-ao1"/>
+                                    <constraint firstAttribute="height" constant="60" id="QCW-H0-xVD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhC-7c-zxd">
+                                <rect key="frame" x="131" y="88" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MDb-ic-pbL" firstAttribute="top" secondItem="pDg-00-AzT" secondAttribute="topMargin" id="B2F-Od-ZgD"/>
+                            <constraint firstItem="ZhC-7c-zxd" firstAttribute="top" secondItem="MDb-ic-pbL" secondAttribute="bottom" constant="20" id="LFe-qq-VO7"/>
+                            <constraint firstItem="ZhC-7c-zxd" firstAttribute="centerX" secondItem="pDg-00-AzT" secondAttribute="centerX" id="MdZ-bP-dI3"/>
+                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="ZhC-7c-zxd" secondAttribute="bottom" id="S9R-a0-Zoz"/>
+                            <constraint firstItem="MDb-ic-pbL" firstAttribute="centerX" secondItem="pDg-00-AzT" secondAttribute="centerX" id="Xyx-B5-pKb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="pDg-00-AzT" secondAttribute="bottom" id="DVl-43-tKA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pDg-00-AzT" secondAttribute="trailing" id="PBY-bR-74y"/>
+                    <constraint firstItem="pDg-00-AzT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Pe4-Gq-RIL"/>
+                    <constraint firstItem="pDg-00-AzT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dGC-pS-9nM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarLabel" destination="MDb-ic-pbL" id="WuZ-68-TNh"/>
+                <outlet property="cardView" destination="pDg-00-AzT" id="8YE-9Z-WqA"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="333.5"/>
+        </tableViewCell>
+    </objects>
+</document>
